@@ -1,0 +1,207 @@
+/**
+ * lab goals:        - Learn all about "do it yourself" linked lists
+ *                   - Learn how to create unit tests using JUnit and the Jamtester tool. 
+ *                   - Learn how to create a complete battery of tests so as to attain complete "code coverage".
+ *                   - Have a lot of fun looking at the bright colors red and green!
+ *
+ * lab instructions: 
+ *                   while ( everyMethodNotYetWrittenAndThoroughlyTested() ) {
+ *                     1) Write a test for a method.
+ *                     2) Run and watch the test fail.
+ *                     
+ *                     while ( testNotYetGreen() ) {
+3) Write/modify the code for the method.
+ *                       4) re-run the test.
+ *                     }
+ *                   } 
+ *
+ *                   Now that you have at least one test method per method in your class, go back and run
+ *                   all tests in the student tool. Do you have complete code coverage? If not, design more
+ *                   tests until you do.
+ *
+ * class invariant: elements stored in the list are all of the same type.
+ */
+import java.util.*;
+import java.io.PrintStream;
+import java.lang.Comparable;
+import java.lang.Object;
+import java.lang.String;
+
+public class SinglyLinkedList<E>
+{
+    private ListNode<E> first;
+    private Class type;
+
+    /**
+     *   only constructor needed, and it is flawless!
+     *   DO NOT CHANGE OR ADD CODE
+     **/
+    public SinglyLinkedList()
+    {
+        first = null;
+    }
+
+    /**
+     *    returns true if the List is empty.
+     *    Ohterwise (List is not empty), return false.
+     **/
+    public boolean isEmpty()
+    {
+        return first==null;
+    }
+
+    /**  returns the number of nodes in the list **/
+    public int size()
+    {
+        int count = 0;
+        ListNode<E>temp = first;
+        while(temp!=null)
+        {
+            temp = temp.getNext();
+            count++;
+        }
+        return count;
+        }
+        
+    
+
+    /**
+     *  insert obj at index ind, shift all previous objects to the next higher index
+     *  e.g., list before [1 2 3 4]
+     *  
+     *  list.add(2, new Integer(11)) modifies list to [1 2 11 3 4]
+     *  preCondition:  0 <= ind <= number of nodes in the list
+     **/
+    public void add(int ind, E obj)
+    {
+        if (ind==0)
+        {
+            first = new ListNode<E>(obj,first);
+        
+        }
+        else
+        {
+            ListNode<E>prev = first;
+            for (int i = 1; i<ind; i++)
+            {
+                prev = prev.getNext();
+            }
+            prev.setNext(new ListNode<E>(obj, prev.getNext()));
+        }
+    }
+
+    /** returns true if true iff getvalue().equals(obj) for some node in list<br>
+     **         false otherwise **/
+    public boolean contains(E obj)
+    {
+        ListNode<E>temp = first;
+        while (temp != null)
+        {
+            if(temp.getValue().equals(obj))
+            {
+                return true;
+            }
+            temp = temp.getNext();
+        }
+        return false;
+    }
+
+    /**
+     * returns the reference to front node of this list.  Needed by classes that extend this class.
+     **/
+    public ListNode<E> getFront()
+    {
+        return first;   // so it compiles
+    }
+
+    /**
+     *     Precondtion: sze() > 0
+     **/
+    public ListNode<E> removeFront()
+    {
+        ListNode<E>out = first;
+        first = first.getNext();
+        return out;
+    }
+
+    /**
+     *  return a reference (not the ListNode but the getvalue() ) to the obj at index ind.
+     *  list is not modified!
+     *  preCondition: 0 <= ind < number of nodes in the list
+     *                if list is empty return null
+     **/
+    public E get(int ind)
+    {
+        if(isEmpty())
+        {
+            return null;
+        }
+        ListNode<E> temp = first;
+        for (int i = 0; i < ind; i++)
+        {
+            temp = temp.getNext();
+        }
+        return temp.getValue();
+    }
+
+    /**
+     **  insert obj as the first element in the list. 
+     **   all other elements move to the next higher index
+     **  e.g., list before [1 2 3 4]
+     **  list.addFirst(new Integer(11)) modifies list to [11 1 2 3 4]
+     **  This method should create a list with one node if the list was previously empty
+     **/
+    public void addFirst(E obj)
+    {
+        first = new ListNode(obj, first);
+    }
+
+    /*
+     * you may assume index <= size()
+     */
+    public ListNode<E> getNodeAtIndex(int index)
+    {
+        ListNode<E>temp = first;
+        for (int i = 0; i < index; i++)
+        {
+            temp = temp.getNext();
+        }
+        return temp;
+    }
+
+    /** 
+     * output is a String of the form 
+     * [getValue().toString(), getValue().toStrin(),g ...getValue().toString()]
+     * Adjacent elements are separated by the characters ", " (comma and space). 
+     * for example:           [Troy, Warrior]
+     * is generated by the code
+     *                           list.addFirst("Warrior"); 
+     *                           list.addFirst("Troy"); 
+     *                           list.toString();
+     **/
+    public String toString()
+    {
+        if (first == null || first.getValue().equals("") && size() < 2)
+        {
+            return "[]";
+        }
+        String out = "["+first.getValue().toString()+"]";
+        ListNode<E>temp = first.getNext();
+        while (temp != null)
+        {
+            out = "[" + out.substring(1, out.length() - 1) + ", " + temp.getValue().toString() + "]";
+            temp = temp.getNext();
+        }
+        return out;
+    }
+
+    /**
+     *   you do not need to worry about this method.  
+     *   It is included to ensure that all contents as of the same type
+     **/
+    public void assertValidType(Object o)
+    {
+        if(type == null) type = o.getClass();
+        else if(type!=o.getClass()) throw new IllegalArgumentException();
+    }
+}

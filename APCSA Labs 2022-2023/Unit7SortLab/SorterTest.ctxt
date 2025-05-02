@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=SorterTest
+comment1.params=
+comment1.target=void\ testSortViaJavaArraysClass()
+comment2.params=
+comment2.target=void\ testSortViaMerge()
+comment3.params=
+comment3.target=void\ testsortViaSelection()
+comment4.params=
+comment4.target=void\ testSortViaInsertion()
+comment5.params=theArray
+comment5.target=void\ display(java.lang.Comparable[])
+comment6.params=theArray
+comment6.target=void\ sorted(java.lang.Comparable[])
+numComments=7

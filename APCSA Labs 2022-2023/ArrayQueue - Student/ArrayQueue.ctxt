@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayQueue()
+comment1.params=item
+comment1.target=void\ enqueue(java.lang.String)
+comment1.text=\r\n\ \ \ You\ must\ implement\ enqueue\r\n\ \ \ \ \ \ \ adds\ the\ parameter\ item\ to\ back\ of\ queue\r\n\ \ \ \ \ \ \ the\ queue\ will\ not\ be\ full,\ but\ you\ SHALL\ not\ make\ myQueue\ bigger\r\n\ \ \ \ \ \ \ \ \ \ \ When\ attempting\ Extra\ Credit,\ you\ may\ make\ myQueue\ bigger\r\n\ \ \ \r\n\r\n
+comment2.params=
+comment2.target=java.lang.String\ dequeue()
+comment2.text=\r\n\ \ \ returns\ (and\ removes)\ the\ front\ element\ from\ queue\r\n
+comment3.params=
+comment3.target=int\ size()
+comment3.text=\r\n\ \ \ returns\ the\ number\ of\ elements\ in\ the\ queue\r\n
+comment4.params=
+comment4.target=boolean\ isEmpty()
+comment4.text=\r\n\ \ \ \ returns\ true\ if\ the\ queue\ is\ empty\r\n\ \ \ \ \ \ \ \ \ \ \ \ false\ if\ the\ queue\ contains\ at\ least\ one\ element\r\n
+comment5.params=
+comment5.target=java.lang.String[]\ getQueue()
+comment5.text=\r\n\ \ \ leave\ this\ method\ alone\!\!\!\!\!\r\n
+numComments=6

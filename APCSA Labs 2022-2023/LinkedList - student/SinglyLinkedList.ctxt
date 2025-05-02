@@ -1,0 +1,39 @@
+#BlueJ class context
+comment0.target=SinglyLinkedList
+comment1.params=
+comment1.target=SinglyLinkedList()
+comment1.text=\r\n\ \ \ only\ constructor\ needed,\ and\ it\ is\ flawless\!\r\n\ \ \ DO\ NOT\ CHANGE\ OR\ ADD\ CODE\r\n
+comment10.params=index
+comment10.target=ListNode\ getNodeAtIndex(int)
+comment10.text=\r\n\ you\ may\ assume\ index\ <\=\ size()\r\n
+comment11.params=
+comment11.target=java.lang.String\ toString()
+comment11.text=\ \r\n\ output\ is\ a\ String\ of\ the\ form\ \r\n\ [getValue().toString(),\ getValue().toStrin(),g\ ...getValue().toString()]\r\n\ Adjacent\ elements\ are\ separated\ by\ the\ characters\ ",\ "\ (comma\ and\ space).\ \r\n\ for\ example\:\ \ \ \ \ \ \ \ \ \ \ [Troy,\ Warrior]\r\n\ is\ generated\ by\ the\ code\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list.addFirst("Warrior");\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list.addFirst("Troy");\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list.toString();\r\n
+comment12.params=o
+comment12.target=void\ assertValidType(java.lang.Object)
+comment12.text=\r\n\ \ \ you\ do\ not\ need\ to\ worry\ about\ this\ method.\ \ \r\n\ \ \ It\ is\ included\ to\ ensure\ that\ all\ contents\ as\ of\ the\ same\ type\r\n
+comment2.params=
+comment2.target=boolean\ isEmpty()
+comment2.text=\r\n\ \ \ \ returns\ true\ if\ the\ List\ is\ empty.\r\n\ \ \ \ Ohterwise\ (List\ is\ not\ empty),\ return\ false.\r\n
+comment3.params=
+comment3.target=int\ size()
+comment3.text=returns\ the\ number\ of\ nodes\ in\ the\ list\ *
+comment4.params=ind\ obj
+comment4.target=void\ add(int,\ java.lang.Object)
+comment4.text=\r\n\ \ insert\ obj\ at\ index\ ind,\ shift\ all\ previous\ objects\ to\ the\ next\ higher\ index\r\n\ \ e.g.,\ list\ before\ [1\ 2\ 3\ 4]\r\n\ \ \r\n\ \ list.add(2,\ new\ Integer(11))\ modifies\ list\ to\ [1\ 2\ 11\ 3\ 4]\r\n\ \ preCondition\:\ \ 0\ <\=\ ind\ <\=\ number\ of\ nodes\ in\ the\ list\r\n
+comment5.params=obj
+comment5.target=boolean\ contains(java.lang.Object)
+comment5.text=\ returns\ true\ if\ true\ iff\ getvalue().equals(obj)\ for\ some\ node\ in\ list<br>\r\nfalse\ otherwise\ *
+comment6.params=
+comment6.target=ListNode\ getFront()
+comment6.text=\r\n\ returns\ the\ reference\ to\ front\ node\ of\ this\ list.\ \ Needed\ by\ classes\ that\ extend\ this\ class.\r\n
+comment7.params=
+comment7.target=ListNode\ removeFront()
+comment7.text=\r\n\ \ \ \ \ Precondtion\:\ sze()\ >\ 0\r\n
+comment8.params=ind
+comment8.target=java.lang.Object\ get(int)
+comment8.text=\r\n\ \ return\ a\ reference\ (not\ the\ ListNode\ but\ the\ getvalue()\ )\ to\ the\ obj\ at\ index\ ind.\r\n\ \ list\ is\ not\ modified\!\r\n\ \ preCondition\:\ 0\ <\=\ ind\ <\ number\ of\ nodes\ in\ the\ list\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ if\ list\ is\ empty\ return\ null\r\n
+comment9.params=obj
+comment9.target=void\ addFirst(java.lang.Object)
+comment9.text=\r\n\ \ insert\ obj\ as\ the\ first\ element\ in\ the\ list.\ \r\n\ \ \ all\ other\ elements\ move\ to\ the\ next\ higher\ index\r\n\ \ e.g.,\ list\ before\ [1\ 2\ 3\ 4]\r\n\ \ list.addFirst(new\ Integer(11))\ modifies\ list\ to\ [11\ 1\ 2\ 3\ 4]\r\n\ \ This\ method\ should\ create\ a\ list\ with\ one\ node\ if\ the\ list\ was\ previously\ empty\r\n
+numComments=13

@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ countBeeps()
+comment0.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\r\n\ @param\ \ y\ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ the\ sum\ of\ x\ and\ y\r\n
+comment1.params=
+comment1.target=void\ makeBots()
+comment2.params=
+comment2.target=void\ moveBots()
+comment3.params=
+comment3.target=void\ queryCount()
+comment4.params=
+comment4.target=void\ sortBeepersArray()
+comment5.params=
+comment5.target=void\ placeStacks()
+comment6.params=
+comment6.target=void\ goHome()
+comment7.params=
+comment7.target=void\ sortBeepers()
+numComments=8

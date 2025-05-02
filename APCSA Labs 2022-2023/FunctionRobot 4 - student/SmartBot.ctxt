@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ turnAround()
+comment1.params=
+comment1.target=void\ turnRight()
+comment2.params=
+comment2.target=void\ faceNorth()
+comment3.params=
+comment3.target=void\ faceSouth()
+comment4.params=
+comment4.target=void\ faceEast()
+comment5.params=
+comment5.target=void\ faceWest()
+comment6.params=
+comment6.target=boolean\ wallOnRight()
+comment7.params=
+comment7.target=boolean\ wallOnLeft()
+comment8.params=
+comment8.target=boolean\ exactlyOneBeeperOnCorner()
+comment9.params=
+comment9.target=boolean\ twoOrMoreBeepersOnCorner()
+numComments=10

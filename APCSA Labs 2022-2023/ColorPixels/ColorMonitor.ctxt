@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=r\ c
+comment0.target=ColorMonitor(int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ ColorMonitor\r\n
+comment1.params=
+comment1.target=int\ getNumRows()
+comment2.params=
+comment2.target=int\ getNumCols()
+comment3.params=r\ c\ p
+comment3.target=void\ setPixel(int,\ int,\ Pixel)
+comment3.text=\r\n\ sets\ the\ pixel\ at\ row\ \=\ r,\ column\ \=\ c\ to\ pixel\ p\r\n
+comment4.params=r\ c
+comment4.target=Pixel\ getPixel(int,\ int)
+comment4.text=\r\n\ returns\ the\ Pixel\ at\ row\ \=\ r,\ column\ \=\ c\r\n
+comment5.params=
+comment5.target=int\ numMostlyRed()
+comment5.text=\r\n\ counts\ the\ number\ of\ mostly\ red\ Pixels\r\n
+comment6.params=someValue
+comment6.target=void\ darken(int)
+comment6.text=\r\n\ darkens\ the\ monitor\ according\ to\ the\ following\ algorithm\r\n\ \ \ for\ each\ Pixel\r\n\ \ \ \ \ \ Increase\ blue\ by\ someValue.\r\n\ \ \ \ \ \ Increase\ green\ by\ half\ somevalue\ (Use\ integer\ division).\r\n\ \ \ \ \ \ Both\ blue\ and\ green\ should\ not\ be\ greater\ than\ 255.\r\n\ \ \ \ \ \ \ \ \ If\ either\ value\ is\ greater\ than\ 255,\ reset\ the\ value\ to\ 255.\r\n
+comment7.params=r\ c
+comment7.target=boolean\ isBrightSpot(int,\ int)
+comment7.text=\r\n\ \ \ determines\ if\ the\ specified\ location\ is\ a\ Bright\ spot.\ \ A\ spot\ is\r\n\ \ \ considered\ bright\ if\ all\ three\ following\ conditions\ are\ true\:\r\n\ \ \ \ \ \ \ \ 1)\ \ The\ red\ value\ of\ the\ pixel\ at\ the\ specified\ location\ is\r\n\ \ \ \ \ \ \ \ \ \ \ \ greater\ than\ (\!\=)\ all\ (8\ possible?)\ surrounding\ pixels.\r\n\ \ \ \ \ \ \ \ 2)\ \ The\ blue\ value\ of\ the\ pixel\ at\ the\ specified\ location\ is\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ less\ than\ (\!\=)\ all\ (8\ possible?)\ surrounding\ pixels.\r\n\ \ \ \ \ \ \ \ 3)\ \ The\ green\ value\ of\ the\ pixel\ at\ the\ specified\ location\ is\r\n\ \ \ \ \ \ \ \ \ \ \ \ greater\ than\ (\!\=)\ the\ (green)\ average\ of\ all\ (8\ possible?)\ surrounding\ pixels.\r\n
+numComments=8

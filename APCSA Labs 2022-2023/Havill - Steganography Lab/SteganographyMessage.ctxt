@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=SteganographyMessage
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Steganography\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=s
+comment2.target=java.util.List\ encodeString(java.lang.String)
+comment2.text=\r\n\ \ \ Takes\ a\ string\ consisting\ of\ letters\ and\ spaces\ and\r\n\ \ \ encodes\ the\ string\ into\ an\ arraylist\ of\ integers.\r\n\ \ \ The\ integers\ are\ 1-26\ for\ A-Z,\ 27\ for\ space,\ and\ 0\ for\ end\ of\r\n\ \ \ string.\ The\ arraylist\ of\ integers\ is\ returned.\r\n\ \ \ @param\ s\ string\ consisting\ of\ letters\ and\ spaces\r\n\ \ \ @return\ ArrayList\ containing\ integer\ encoding\ of\ uppercase\r\n\ \ \ version\ of\ s\r\n
+comment3.params=codes
+comment3.target=java.lang.String\ decodeString(java.util.List)
+comment3.text=\r\n\ \ \ precondition\:\ \ codes.size()\ >\=\ 1\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ codes.get(k).intValue()\ \!\=\ 0,\ 0\ <\=\ k\ <\ codes.size()\ -\ 1\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ codes.get(codes.size()\ -\ 1).intValue()\ \=\=\ 0\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ that\ is,\ codes\ contains\ exactly\ one\ 0,\ located\ at\ last\ index\r\n\ \ \ Returns\ the\ string\ represented\ by\ the\ codes\ arraylist.\r\n\ \ \ 1-26\ \=\ A-Z,\ 27\ \=\ space\r\n\ \ \ @param\ codes\ encoded\ string\r\n\ \ \ @return\ decoded\ string\r\n
+comment4.params=num
+comment4.target=int[]\ getBitPairs(int)
+comment4.text=\r\n\ \ Given\ a\ number\ from\ 0\ to\ 63,\ creates\ and\ returns\ a\ 3-element\r\n\ \ int\ array\ consisting\ of\ the\ integers\ representing\ the\r\n\ \ pairs\ of\ bits\ in\ the\ number\ from\ right\ to\ left.\r\n\ \ \r\n\ \ red\ represents\ the\ least\ significant\ two\ bits\r\n\ \ and\ blue\ represnts\ the\ most\ significant\ bit\ \r\n\ \ \ \ \ \ \ (note\ 0\ fills\ the\ second\ bit/more\ significant\ bit)\r\n\ \ \r\n\ \ @param\ num\ number\ to\ be\ broken\ up\r\n\ \ @return\ bit\ pairs\ in\ number\r\n
+comment5.params=source\ s
+comment5.target=Picture\ hideText(Picture,\ java.lang.String)
+comment5.text=\r\n\ \ \ Hide\ a\ string\ (must\ be\ only\ letters\ and\ spaces)\ in\ a\ picture.\r\n\ \ \ The\ string\ always\ starts\ in\ the\ upper\ left\ corner.\r\n\ \ \ @param\ source\ picture\ to\ hide\ string\ in\r\n\ \ \ @param\ s\ string\ to\ hide\r\n\ \ \ @return\ picture\ with\ hidden\ string\r\n
+comment6.params=source
+comment6.target=java.lang.String\ revealText(Picture)
+comment6.text=\r\n\ \ \ Returns\ a\ string\ hidden\ in\ the\ picture\r\n\ \ \ @param\ source\ picture\ with\ hidden\ string\r\n\ \ \ @return\ revealed\ string\r\n
+numComments=7

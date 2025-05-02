@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ArrayStack()
+comment1.params=
+comment1.target=java.lang.String\ pop()
+comment1.text=\r\n\ \ \ preCondition\:\ \ Stack\ is\ not\ empty\r\n\ \ \ \r\n\ \ \ returns\ the\ top\ element\ of\ the\ Stack\r\n\ \ \ \r\n\ \ \ post\ Condition\:\ \ top\ element\ has\ been\ removed\ from\ Stack\r\n
+comment2.params=item
+comment2.target=void\ push(java.lang.String)
+comment2.text=\ \r\n\ \ \ if\ size()\ \=\=\ myStack.lenght\r\n\ \ \ {\r\n\ \ \ \ \ \ \ create\ a\ new\ String[\ 2*myStack.length\ ]\ \r\n\ \ \ \ \ \ \ \ \ and\ copy\ contents\ to\ this\ new\ String[]\r\n\ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ reassign\ myStack\ to\ this\ new\ String[]\r\n\ \ \ }\r\n\ \ \ \r\n\ \ \ adds\ the\ parameter\ item\ to\ top\ of\ Stack\r\n\ \ \ \r\n
+comment3.params=
+comment3.target=boolean\ isEmpty()
+comment3.text=\r\n\ \ \ returns\ true\ if\ the\ Stack\ is\ Empty\r\n\ \ \ \ \ \ \ \ \ \ \ false\ if\ the\ Stack\ contains\ at\ least\ one\ element\r\n
+comment4.params=
+comment4.target=int\ size()
+comment4.text=\r\n\ \ \ return\ the\ number\ of\ elements\ in\ the\ Stack\r\n
+comment5.params=
+comment5.target=java.lang.String[]\ getStack()
+comment5.text=\r\n\ \ \ DO\ NOT\ MODIFY\ UNDER\ PENALTY\ OF\ DEATH\ BY\ EXTREME\ TORTURE\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\!\r\n
+numComments=6

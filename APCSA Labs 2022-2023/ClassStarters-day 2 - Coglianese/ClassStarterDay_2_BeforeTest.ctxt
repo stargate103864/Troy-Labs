@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ClassStarterDay_2_BeforeTest
+comment0.text=\r\n\ The\ test\ class\ for\ ClassStarterDay_2<String>\ Test\ for\ Day\ 1\r\n\ \r\n\ \ \ \ test\ the\ following\ methods\r\n\ \ \ \ \r\n\ \ \ \ public\ ListNode<E>\ remove(ListNode<E>\ head,\ E\ obj)\r\n\ \ \ \ public\ ListNode<E>\ removeAll(ListNode<E>\ head,\ E\ obj)\r\n
+comment1.params=
+comment1.target=void\ testInsertBefore_onlyNode()
+comment2.params=
+comment2.target=void\ testInsertBefore_notInList()
+comment3.params=
+comment3.target=void\ testInsertBefore_emptyList()
+comment4.params=
+comment4.target=void\ testInsertBefore_Last()
+comment5.params=
+comment5.target=void\ testInsertBefore_First()
+comment6.params=
+comment6.target=void\ testInsertBefore_Inside()
+numComments=7

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ClassPeriod
+comment0.text=\r\n\ @author\:\ Ian\ Havill\ &\ Kasey\ Wang\r\n\ \r\n\ note\:\ Some\ of\ the\ methods\ below\ are\ for\ you\ to\ complete.\r\n
+comment1.params=classname
+comment1.target=ClassPeriod(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=id
+comment3.target=int\ findStudent(int)
+numComments=4

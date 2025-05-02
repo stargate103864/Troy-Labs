@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=MysterySolverII
+comment1.params=input
+comment1.target=java.lang.String\ mystery6(java.lang.String)
+comment2.params=input
+comment2.target=java.lang.String\ mystery7(java.lang.String)
+comment3.params=input
+comment3.target=java.lang.String\ mystery8(java.lang.String)
+comment4.params=input
+comment4.target=java.lang.String\ mystery9(java.lang.String)
+comment5.params=input
+comment5.target=java.lang.String\ mysteryF(java.lang.String)
+numComments=6

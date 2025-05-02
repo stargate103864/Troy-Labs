@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=SinglyLinkedList2StudentTest
+comment0.text=\r\n\ The\ test\ class\ for\ SinglyLinkedListTest\ for\ Part\ B\r\n\ \r\n\ \ \ \ test\ the\ following\ methods\r\n\ \ \ \ \ \ \ addFirst(Object)\r\n\ \ \ \ \ \ \ getFirst()\r\n\ \ \ \ \ \ \ addLast(Object)\r\n\ \ \ \ \ \ \ getLast()\r\n\ \ \ \ \ \ \ set(int,\ Object)\r\n\ \ \ \ \ \ \ getMiddleNode()\r\n\ \r\n
+comment1.params=
+comment1.target=void\ testStudent2A()
+comment1.text=\r\n\ The\ test\ class\ for\ SinglyLinkedListTest\ for\ Part\ B\r\n\ \r\n\ \ \ \ test\ the\ following\ methods\r\n\ \ \ \ \ \ \ addFirst(Object)\r\n\ \ \ \ \ \ \ getFirst()\r\n\ \ \ \ \ \ \ addLast(Object)\r\n\ \ \ \ \ \ \ getLast()\r\n\ \ \ \ \ \ \ set(int,\ Object)\r\n\ \ \ \ \ \ \ getMiddleNode()\r\n\ \r\n
+numComments=2

@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MorseCodeStudentTest
+comment0.text=\r\n\ The\ test\ class\ MorseCodeTest.\r\n\r\n\ @author\ \ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=void\ testDecode_AEIOU()
+comment1.text=\r\n\ Default\ constructor\ for\ test\ class\ MorseCodeTest\r\n
+comment2.params=
+comment2.target=void\ testEncode_I_AM_A_CONSERVATIVE()
+numComments=3

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=SteganographyMessageTest
+comment0.text=\r\n\r\n\ @author\ \ Don\ Allen\r\n
+comment1.params=
+comment1.target=void\ testEncodeString01()
+comment2.params=
+comment2.target=void\ testDecodeString02()
+comment3.params=
+comment3.target=void\ testGetBitPairs03()
+comment4.params=
+comment4.target=void\ testHideText04()
+comment5.params=
+comment5.target=void\ testRevealText05()
+numComments=6

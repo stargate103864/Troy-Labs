@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ClassStarterDay_3
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ClassStarterDay_1\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=head\ obj
+comment1.target=int\ count(ListNode,\ java.lang.Object)
+comment1.text=\r\n<br>\ returns\ the\ number\ of\ nodes\ such\ that\ getValue().equals(obj)\r\n
+comment2.params=head\ item
+comment2.target=int\ fix(ListNode,\ java.lang.Object)
+comment2.text=\r\n<br>\ modify\ all\ nodes\ with\ getvalue()\ \=\=\ null\ to\ getvalue().equals(\ item\ )\r\n<br>\r\n<br>\ return\ the\ number\ of\ nodes\ that\ have\ been\ modified\r\n
+numComments=3

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.params=n
+comment0.target=int\ uglyNumberGetter(int)
+comment1.params=n
+comment1.target=boolean\ isUglyNumber(int)
+comment2.params=vec\ item
+comment2.target=void\ compact(java.lang.Object[],\ java.lang.Object)
+comment3.params=licensePlate
+comment3.target=java.lang.String\ carRentalCode(java.lang.String)
+comment4.params=n
+comment4.target=boolean\ isPrimeNumber(int)
+comment5.params=from\ to
+comment5.target=int[]\ primeNumberGenerator(int,\ int)
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment7.params=a
+comment7.target=int\ digsum(int)
+comment8.params=n
+comment8.target=boolean\ isUnitSummation(int)
+comment9.params=first\ last
+comment9.target=int[]\ getUnitSummationBetween(int,\ int)
+numComments=10

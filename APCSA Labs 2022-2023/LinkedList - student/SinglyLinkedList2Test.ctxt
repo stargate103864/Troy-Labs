@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=SinglyLinkedList2Test
+comment0.text=\r\n\ The\ test\ class\ SinglyLinkedList2Test.\r\n\r\n\ @author\ \ Coglianese\r\n\ @version\ 12.2022\r\n
+comment1.params=
+comment1.target=void\ testStudent2A()
+comment2.params=
+comment2.target=SinglyLinkedList2Test()
+comment2.text=\r\n\ Default\ constructor\ for\ test\ class\ SinglyLinkedList2Test\r\n
+comment3.params=
+comment3.target=void\ setUp()
+comment3.text=\r\n\ Sets\ up\ the\ test\ fixture.\r\n\r\n\ Called\ before\ every\ test\ case\ method.\r\n
+comment4.params=
+comment4.target=void\ tearDown()
+comment4.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
+numComments=5

@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ twoOrMoreBeepersOnCorner()
+comment1.params=
+comment1.target=boolean\ exactlyTwoBeepersOnCorner()
+comment2.params=
+comment2.target=boolean\ nextToExactlyOneBeeper()
+comment3.params=
+comment3.target=boolean\ oneOrTwoBeepersOnCorner()
+numComments=4

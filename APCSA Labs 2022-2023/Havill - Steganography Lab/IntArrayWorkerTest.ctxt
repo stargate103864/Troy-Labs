@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=IntArrayWorkerTest
+comment0.text=\r\n\r\n\ @author\ \ Don\ Allen\r\n
+comment1.params=
+comment1.target=void\ testGetTotal01()
+comment2.params=
+comment2.target=void\ testGetTotalNested02()
+comment3.params=
+comment3.target=void\ testGetCount03()
+comment4.params=
+comment4.target=void\ testGetLargest04()
+comment5.params=
+comment5.target=void\ testGetColTotal05()
+comment6.params=
+comment6.target=void\ testNumValuesBetween06()
+comment7.params=
+comment7.target=void\ testIsCoolNumber07()
+comment8.params=
+comment8.target=void\ testGetBestCoolColumn08()
+numComments=9

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Sorter
+comment1.params=vec
+comment1.target=long\ sortViaJavaArraysClass(java.lang.Comparable[])
+comment2.params=vec
+comment2.target=long\ sortViaInsertion(java.lang.Comparable[])
+comment2.text=\ You\ implement\ these\ three\ methods\ using\ the\ algorithms/code\r\n\ given\ in\ class.\ You\ may\ not,\ of\ course,\ use\ and\ pre-written\ library\ sorts\!\r\n
+comment3.params=vec
+comment3.target=long\ sortViaSelection(java.lang.Comparable[])
+comment4.params=vec
+comment4.target=long\ sortViaMerge(java.lang.Comparable[])
+numComments=5

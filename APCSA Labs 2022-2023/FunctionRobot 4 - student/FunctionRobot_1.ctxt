@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=int\ numberOfLeftTurnsToFaceNorth()
+comment1.params=
+comment1.target=int\ numberOfLeftTurnsToFaceSouth()
+comment1.text=\r\n\ \ \ return\ the\ number\ of\ left\ turns\ needed\ to\ have\ this\ Robot\ face\ South\r\n\ \ \ \ \ Robots\ current\ direction\ is\ NOT\ changed\!\r\n
+comment2.params=
+comment2.target=int\ numberOfLeftTurnsToFaceWest()
+comment2.text=\r\n\ \ \ return\ the\ number\ of\ left\ turns\ needed\ to\ have\ this\ Robot\ face\ West\r\n\ \ \ \ \ Robots\ current\ direction\ is\ NOT\ changed\!\r\n
+comment3.params=
+comment3.target=int\ numberOfLeftTurnsToFaceEast()
+comment3.text=\r\n\ \ \ return\ the\ number\ of\ left\ turns\ needed\ to\ have\ this\ Robot\ face\ East\r\n\ \ \ \ \ Robots\ current\ direction\ is\ NOT\ changed\!\r\n
+numComments=4

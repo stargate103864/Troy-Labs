@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=SteganographyStudentHideImageTest
+comment0.text=\r\n\r\n\ @author\ \ Don\ Allen\r\n
+comment1.params=
+comment1.target=void\ testCanHide01()
+comment2.params=
+comment2.target=void\ testHidePicture02()
+comment3.params=
+comment3.target=void\ testCanHideAt03()
+comment4.params=
+comment4.target=void\ testHideImageOffset04()
+numComments=5

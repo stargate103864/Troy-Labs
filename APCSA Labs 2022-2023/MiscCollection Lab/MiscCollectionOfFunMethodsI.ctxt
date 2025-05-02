@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=int\ sumDigits(java.lang.Integer)
+comment1.params=i
+comment1.target=boolean\ isDivisibleBy9(java.lang.Integer)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=numbers
+comment3.target=double\ average(int[])
+comment4.params=numbers
+comment4.target=double\ standardDeviation(int[])
+numComments=5

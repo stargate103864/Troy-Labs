@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=StudentName_AreTheseTheSameTester
+comment1.params=
+comment1.target=void\ testcontainsTheSameElementsInSameOrderArrayList0()
+comment1.text=\r\n\ Default\ constructor\ for\ test\ class\ AddEmTester\r\n
+comment10.params=
+comment10.target=void\ testcontainsTheSameElementsInSameOrderArray4()
+comment2.params=
+comment2.target=void\ testcontainsTheSameElementsInSameOrderArrayList1()
+comment3.params=
+comment3.target=void\ testcontainsTheSameElementsInSameOrderArrayList2()
+comment4.params=
+comment4.target=void\ testcontainsTheSameElementsInSameOrderArrayList3()
+comment5.params=
+comment5.target=void\ testcontainsTheSameElementsInSameOrderArrayList4()
+comment6.params=
+comment6.target=void\ testcontainsTheSameElementsInSameOrderArray0()
+comment7.params=
+comment7.target=void\ testcontainsTheSameElementsInSameOrderArray1()
+comment8.params=
+comment8.target=void\ testcontainsTheSameElementsInSameOrderArray2()
+comment9.params=
+comment9.target=void\ testcontainsTheSameElementsInSameOrderArray3()
+numComments=11

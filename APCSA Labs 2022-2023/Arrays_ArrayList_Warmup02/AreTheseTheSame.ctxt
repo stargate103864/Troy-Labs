@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=AreTheseTheSame
+comment1.params=arr1\ arr2
+comment1.target=boolean\ containsTheSameElementsInSameOrder(java.lang.Comparable[],\ java.lang.Comparable[])
+comment1.text=\r\n\ @return\ \ \ \ \ true\ if\ the\ two\ arrays\ contain\ the\ same\ elements\ in\ the\ same\ order.\r\n
+comment2.params=arr1\ arr2
+comment2.target=boolean\ containsTheSameElementsInSameOrder(java.util.ArrayList,\ java.util.ArrayList)
+comment2.text=\r\n\ @return\ \ \ \ \ true\ if\ the\ two\ array\ lists\ contain\ the\ same\ elements\ in\ the\ same\ order.\r\n
+numComments=3

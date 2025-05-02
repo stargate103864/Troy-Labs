@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.params=arr
+comment0.target=boolean\ outOfOrder(java.lang.Comparable[])
+comment0.text=\r\n\ Postcondition\:\ \ \ \ \ checks\ if\ all\ the\ items\ in\ arr\ are\ in\ the\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ correct\ non-descending\ ordering\ defined\ by\ Comparable\r\n
+comment1.params=arr
+comment1.target=boolean\ outOfOrder(java.util.ArrayList)
+numComments=2

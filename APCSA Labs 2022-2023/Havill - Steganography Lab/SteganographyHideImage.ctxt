@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=SteganographyHideImage
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Steganography\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=source\ secret
+comment1.target=boolean\ canHide(Picture,\ Picture)
+comment1.text=\ \r\n\ Determines\ whether\ secret\ can\ be\ hidden\ in\ source,\ which\ is\ true\ if\:\r\n\ \ \ \ \ \ the\ length\ of\ secret\ is\ less\ than\ or\ equal\ to\ length\ of\ source\r\n\ and\ \ the\ width\ of\ secret\ is\ less\ than\ or\ equal\ to\ width\ of\ source.\r\n\ \r\n\ @param\ source\ is\ not\ null\r\n\ @param\ secret\ is\ not\ null\r\n\ @return\ true\ if\ secret\ can\ be\ hidden\ in\ source,\ false\ otherwise.\r\n
+comment2.params=source\ secret
+comment2.target=Picture\ hidePicture(Picture,\ Picture)
+comment2.text=\r\n\ \ \ Creates\ a\ new\ Picture\ with\ data\ from\ secret\ hidden\ in\ data\ from\ source\r\n\ \ \ @param\ source\ is\ not\ null\r\n\ \ \ @param\ seecret\ is\ not\ null\r\n\ \ \ @return\ combined\ Picture\ with\ secret\ hidden\ in\ source\r\n\ \ \ precondition\:\ canHide(source,\ secret)\ returns\ true\r\n
+comment3.params=source\ secret\ row\ col
+comment3.target=boolean\ canHideAt(Picture,\ Picture,\ int,\ int)
+comment3.text=\ \ \r\n\ Returns\ true\ if\ secret\ can\ be\ hidden\ in\ source\ if\ the\ upper\ left\ corner\ of\ \r\n\ \ secret\ is\ placed\ at\ row,\ row\ and\ column,\ col\ in\ source.\r\n\ \r\n\ @param\ source\ is\ not\ null\r\n\ @param\ secret\ is\ not\ null\r\n\ @return\ true\ if\ secret\ can\ be\ hidden\ in\ source,\ false\ otherwise.\r\n
+comment4.params=source\ secret\ startRow\ startCol
+comment4.target=Picture\ hidePicture(Picture,\ Picture,\ int,\ int)
+comment4.text=\r\n\ Creates\ a\ new\ Picture\ with\ data\ from\ secret\ hidden\ inn\ data\ from\ source\r\n\ @param\ source\ is\ not\ null\r\n\ @param\ secret\ is\ not\ null\r\n\ @param\ startRow\ represents\ the\ row\ of\ the\ Upper\ Left\ corner\ where\ the\ hidden\ picture\ will\ be\ placed\r\n\ @param\ startCol\ represents\ the\ column\ of\ the\ Upper\ Left\ corner\ where\ the\ hidden\ picture\ will\ be\ placed\r\n\ @return\ combined\ Picture\ with\ secret\ hhidden\ in\ source\r\n\ precondition\:\ secret.getHeight()\ +\ startRow\ <\=\ source.getHeight()\r\n\ precondition\:\ secret.getWidth()\ +\ startRow\ <\=\ source.getWidth()\ \r\n
+numComments=5

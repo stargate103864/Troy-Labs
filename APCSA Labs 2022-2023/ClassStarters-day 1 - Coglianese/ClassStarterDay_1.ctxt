@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ClassStarterDay_1
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ClassStarterDay_1\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=head\ obj
+comment1.target=ListNode\ remove(ListNode,\ java.lang.Object)
+comment1.text=\ removes\ first\ node\ such\ that\ obj.equals(node.getvalue())\ \=\=\ true\r\n<br>\ return\ ListNOde\ to\ the\ front\ of\ the\ List\r\n<br>\ If\ the\ List\ does\ not\ contain\ obj,\ the\ List\ is\ not\ modified\r\n
+comment2.params=head\ obj
+comment2.target=ListNode\ removeAll(ListNode,\ java.lang.Object)
+comment2.text=\ \ \ \ \ \ removes\ all\ nodes\ such\ that\ obj.equals(node.getvalue())\ \=\=\ true\r\n<br>\ \ return\ ListNode\ to\ the\ first\ node\ in\ the\ List\r\n<br>\ If\ the\ List\ does\ not\ contain\ obj,\ the\ List\ is\ not\ modified\r\n
+comment3.params=head\ obj
+comment3.target=boolean\ contains(ListNode,\ java.lang.Object)
+numComments=4

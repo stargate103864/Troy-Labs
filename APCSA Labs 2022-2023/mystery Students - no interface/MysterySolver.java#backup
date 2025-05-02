@@ -1,0 +1,641 @@
+import java.util.*;
+
+public class MysterySolver implements MysterySolverInterface4AB
+{
+
+  public String mysteryPostFix(String input)    // PostFix evaluator
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+//  	Integer i = new Integer();
+    String str = "";
+
+   	while (strTok.hasMoreTokens())
+    {
+  		 q.enqueue(strTok.nextToken());
+       if ( !((String)q.peekFront()).equals("+") ||
+            ((String)q.peekFront()).equals("-") ||
+            ((String)q.peekFront()).equals("*") ||
+            ((String)q.peekFront()).equals("/") ||
+            ((String)q.peekFront()).equals("%") ||
+            ((String)q.peekFront()).equals("^") )
+       {
+          s.push(new Integer((String)q.dequeue()));
+       }
+       else if ( ((String)q.peekFront()).equals("+"))
+       {
+          q.dequeue();
+/*          int a = ((Integer)s.pop()).intValue();
+          int b = ((Integer)s.pop()).intValue();
+          System.out.println("a = " + a + "b = " + b);
+*/          s.push(new Integer(a + b));
+          System.out.println("Top = " + s.peekTop());
+          s.push(new Integer(
+                     ((Integer)s.pop()).intValue()
+                                   + ((Integer)s.pop()).intValue()));
+       }
+       else if (s.peekTop().equals("-"))
+       {
+          s.pop();
+          s.push(new Integer(
+                     -1*((Integer)s.pop()).intValue() + ((Integer)s.pop()).intValue()));
+       }
+       else if (s.peekTop().equals("*"))
+       {
+          s.pop();
+          s.push(new Integer(
+                     ((Integer)s.pop()).intValue() * ((Integer)s.pop()).intValue()));
+       }
+       else if (s.peekTop().equals("/"))
+       {
+          s.pop();
+          s.push(new Integer(
+                     1/((Integer)s.pop()).intValue() * ((Integer)s.pop()).intValue()));
+       }
+       else if (s.peekTop().equals("^"))
+       {
+          s.pop();
+          q.enqueue(s.pop());
+          s.push(new Integer((int)
+              Math.pow(((Integer)s.pop()).intValue(),((Integer)q.dequeue()).intValue())));
+       }
+    }
+
+    return (String)s.pop();
+  }
+  	
+
+  public String mysteryP(String input)    // Prime # generated not correctly implemented
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i = new Integer(strTok.nextToken());
+    String str = "";  	
+  	
+  	if (i.intValue() <= 8)
+  	{
+      	switch(i.intValue())
+      	{
+      	    case 8 : str = "19 " + str;
+      	             q.enqueue("19");
+      	    case 7 : str = "17 " + str;
+      	             q.enqueue("17");
+      	    case 6 : str = "13 " + str;
+      	             q.enqueue("13");
+      	    case 5 : str = "11 " + str;
+      	             q.enqueue("11");
+      	    case 4 : str = "7 " + str;
+      	             q.enqueue("7");
+      	    case 3 : str = "5 " + str;
+      	             q.enqueue("5");
+      	    case 2 : str = "3 " + str;
+      	             q.enqueue("3");
+      	    case 1 : str = "2 " + str;
+      	}
+    	return str.substring(0,str.length()-1);
+    }
+
+    str = "2 3 5 7 11 13 17 19";
+    q.enqueue(new Integer(19));
+    q.enqueue(new Integer(17));
+    q.enqueue(new Integer(13));
+    q.enqueue(new Integer(11));
+    q.enqueue(new Integer(7));
+    q.enqueue(new Integer(5));
+    q.enqueue(new Integer(3));
+    s.push(new Integer(23-2));
+  	while (i.intValue() > 8) 
+  	{
+  		s.push( new Integer(((Integer)s.peekTop()).intValue() + 2));
+  		q.enqueue(s.peekTop());
+//        System.out.println("testing " + s.peekTop() + " for primeness");
+  		while (!q.peekFront().equals(s.peekTop()))
+  		{
+//           System.out.println(q.peekFront() + " processing in while loop");
+  		   if ( ((Integer)s.peekTop()).intValue() % 
+  		         ((Integer)q.peekFront()).intValue() == 0)
+  		   {
+//  		       System.out.println(s.peekTop() + " is NOT a Prime");
+  		       break;
+  		   }
+  		   q.enqueue(q.dequeue());
+  		}
+  		if (q.peekFront().equals(s.peekTop()))
+  		{
+  		    i = new Integer(i.intValue()-1);
+  		    str = str + " " + s.peekTop();
+//            System.out.println("New prime String is " + str);
+  		}
+  		else
+  		{
+  		    while (!q.peekFront().equals(s.peekTop()))
+  		    {
+  		        q.enqueue(q.dequeue());
+  		    }
+  		    q.dequeue();
+  		}
+  	}
+  	
+  	return str;
+  }
+  
+   public String mysteryS(String input)    // Sort'em not correctly implemented
+   {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	String str = new String();
+
+  	while (strTok.hasMoreTokens()) 
+  	{
+  		q.enqueue(strTok.nextToken());
+//        System.out.println("processed Token " + q.peekFront());
+  	}
+  	
+//    System.out.println("processed all tokens");
+
+  	while (!q.isEmpty())
+  	{
+  		if (s.isEmpty())
+  		   s.push(q.dequeue());
+
+//  		System.out.println("part 1");
+
+  		while (!q.isEmpty() && Integer.parseInt((String)q.peekFront()) 
+  		                                   <= Integer.parseInt((String)s.peekTop()))
+  		{
+  		   s.push(q.dequeue());
+  		}
+
+//        System.out.println("first while loop");
+
+  		if (!q.isEmpty())
+  		{
+  		    while(!s.isEmpty() && Integer.parseInt((String)s.peekTop() )
+  		                                  < Integer.parseInt((String)q.peekFront()) )
+  		    {
+  		        q.enqueue(s.pop());
+  		    }
+  		}
+  	}
+
+  	while(!s.isEmpty())
+  	{
+  	   str = str + " " + s.pop();
+  	}
+  	
+  	return str.substring(1);
+  }  
+
+  public String mystery1(String input)
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	
+  	while (strTok.hasMoreTokens())
+  	{
+  		s.push(strTok.nextToken());
+  	}
+  	
+  	String str = new String();
+  	
+  	while (!s.isEmpty())
+  	{
+  	   str = str + " " + s.pop();
+  	}
+  	
+  	return str.substring(1);
+  }
+  
+  public String mystery2(String input)   // odds && positive -> stack then  even -> queue
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	
+  	while (strTok.hasMoreTokens())
+  	{
+  		i = new Integer(strTok.nextToken());
+  		
+  		
+//  		if (i.intValue() == i.intValue()/2*2)  // even
+  		if (i.intValue() < 0 || i.intValue()%2 == 0)  // even
+  		{
+//  	     System.out.println("enque'ing next i is " + i);
+  		   q.enqueue(i);
+  		}
+  		else
+  		{
+//  	     System.out.println("push'ing next i is " + i);
+  		   s.push(i);
+  		}
+  	}
+  	
+  	String str = new String();
+  	
+  	while (!s.isEmpty())
+  	{
+  	   str = str + " " + s.pop();
+//	   System.out.println("pop'ing next i str is " + str);
+  	}
+  	
+  	while (!q.isEmpty())
+  	{
+  	   str = str + " " + q.dequeue();
+//	   System.out.println("dequeue'ing next i str is " + str);
+  	}
+
+  	return str.substring(1);
+  }
+  
+  public String mystery3(String input)   // square each value and reverse order
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	Integer i;
+  	
+  	while (strTok.hasMoreTokens())
+  	{
+  		s.push(strTok.nextToken());
+  	}
+  	
+  	String str = new String();
+  	
+  	while (!s.isEmpty())
+  	{
+  		i = new Integer((String)s.pop());
+  	    str = str + " " + Math.round(Math.pow(i.intValue(),2));
+  	}
+  	
+  	return str.substring(1);
+  }
+  
+  public String mystery4(String input)   // displays product in reverse order
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	
+  	while (strTok.hasMoreTokens())
+  	{
+  		if (s.isEmpty())
+  		{
+  			s.push(Integer.valueOf(strTok.nextToken()));
+  		}
+  		else
+  		{
+  			i = (Integer)s.peekTop();
+  			i = new Integer(i.intValue() *
+  			                  (Integer.valueOf(strTok.nextToken()).intValue()));
+  			s.push(i);
+  		}
+  	}
+  	
+  	String str = new String();
+  	
+  	while (!s.isEmpty())
+  	{
+  		str = str + " " + (Integer)s.pop();
+  	}
+
+  	return str.substring(1);
+  }
+
+
+   public String mystery5(String input)   // displays -> product in forward order
+   {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	
+ 	while (strTok.hasMoreTokens())
+  	{
+  		if (q.isEmpty())
+  		{
+  			s.push(Integer.valueOf(strTok.nextToken()));
+  			q.enqueue((Integer) s.peekTop());
+  		}
+  		else
+  		{
+  			i = (Integer)s.peekTop();
+  			i = new Integer(i.intValue() *
+  			                  (Integer.valueOf(strTok.nextToken()).intValue()));
+  			s.push(i);
+  			q.enqueue(i);
+  		}
+  	}
+  	
+  	String str = new String();
+  	
+  	while (!q.isEmpty())
+  	{
+  		str = str + " " + (Integer)q.dequeue();
+  	}
+
+  	return str.substring(1);
+  }
+
+  public String mystery6(String input)
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	
+  	String str = new String();
+
+  	while (strTok.hasMoreTokens())
+  	{
+  		q.enqueue(strTok.nextToken());
+  	}
+  	
+  	Integer i = new Integer(0);
+  	s.push(i);
+    while (!q.isEmpty())
+    {
+       i = new Integer((String)q.dequeue());
+       i = new Integer(i.intValue() + ((Integer)s.pop()).intValue());
+       s.push(i);
+       str = str + " " + i;
+    }
+
+  	
+  	return str.substring(1);
+  }
+
+  public String mystery7(String input)  // steal from mystery 6
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	
+  	String str = new String();
+
+  	while (strTok.hasMoreTokens())
+  	{
+  		if (s.isEmpty())
+  		{
+           s.push(Integer.valueOf(strTok.nextToken()));
+  		}
+  		else
+  		{
+  			i = new Integer(Integer.parseInt(strTok.nextToken()) 
+  			                  + ((Integer)s.peekTop()).intValue());
+  			s.push(i);
+  		}
+  	}
+  	
+    while (!s.isEmpty())
+    {
+       i = new Integer( ((Integer)s.peekTop()).intValue() );
+       while (i.intValue() > 0)
+       {
+	  	  if ((str.length()==0) || str.charAt(0)=='\n')
+	  	  {
+             str = ((Integer)s.peekTop()).toString() + str;
+	  	  }
+	  	  else
+	  	  {
+	  	  	str = ((Integer)s.peekTop()).toString() + " " + str;
+	  	  }
+          
+          i = new Integer(i.intValue()-1); 
+       }
+       while (str.length() > 0 && str.charAt(0)==' ')
+       {
+	      str = str.substring(1,str.length());
+       }
+       str = '\n' + str;
+//       System.out.println("\n" + "Now comes the string " + str);
+       s.pop();
+    }
+
+  	return str.substring(1,str.length());
+  }
+  
+  public String mystery8(String input)  // reverse first, then adds'em - still in the work
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i = new Integer(0);
+  	
+  	String str = new String();
+
+  	while (strTok.hasMoreTokens())
+  	{
+  		s.push(strTok.nextToken());
+  	}
+  	
+  	while (!s.isEmpty())
+  	{
+  		i = new Integer(Integer.parseInt((String)s.peekTop()) + i.intValue());
+  		q.enqueue(i);
+  		s.pop();
+  	}
+  	
+  	while (!q.isEmpty())
+  	{
+  		str =  str + " " + (Integer)q.dequeue();
+  	}
+  	
+  	return str.substring(1);
+  }
+  
+  public String mystery9(String input)   // %2 == 1 -> queue  else even -> stack
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	
+  	while (strTok.hasMoreTokens())
+  	{
+  		i = new Integer(strTok.nextToken());
+  		
+  		
+  		if (i.intValue()%2 == 1)  // even
+  		{
+//  	     System.out.println("enque'ing next i is " + i);
+  		   q.enqueue(i);
+  		}
+  		else
+  		{
+//  	     System.out.println("push'ing next i is " + i);
+  		   s.push(i);
+  		}
+  	}
+  	
+  	String str = new String();
+  	
+  	while (!q.isEmpty())
+  	{
+  	   str = str + " " + q.dequeue();
+//	   System.out.println("dequeue'ing next i str is " + str);
+  	}
+
+  	while (!s.isEmpty())
+  	{
+  	   str = str + " " + s.pop();
+//	   System.out.println("pop'ing next i str is " + str);
+  	}
+  	
+  	return str.substring(1);
+
+  }
+
+  public String mystery10(String input)   // a3 digitsof decimal a1/a2
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i;
+  	String str = new String();
+  	
+  	i = new Integer(strTok.nextToken());
+    s.push(i);
+  	i = new Integer(strTok.nextToken());
+  	q.enqueue(i);
+  	i = new Integer(strTok.nextToken());
+
+/*  correct solution, string concat a stack
+  	while (i.intValue()>0)
+  	{
+  		str = (int)(
+  			    (Math.pow(10,i.intValue()) *
+  		           (double)(((Integer)s.peekTop()).intValue())
+  		             / ((Integer)q.peekFront()).intValue())
+  		             % 10 
+  		           ) + str;
+  		i = new Integer(i.intValue()-1);
+  	}
+*/
+  	while (i.intValue()>0)
+  	{
+  		str = str + 
+  		   (int)(
+  			    (Math.pow(10,str.length()+1) *
+  		           (double)(((Integer)s.peekTop()).intValue())
+  		             / ((Integer)q.peekFront()).intValue())
+  		             % 10 
+  		           );
+  		i = new Integer(i.intValue()-1);
+  	}
+  	
+  	return str;
+
+  }
+  
+  public String mysteryC(String input)   // Conway sequence
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	
+  	String str = strTok.nextToken();
+
+// seed the stack
+  	for (Integer i = new Integer(str.length()-1);
+  	             i.intValue() >= 0;
+  	             i = new Integer(i.intValue()-1))
+  	{
+  		s.push("" + str.charAt(i.intValue()));
+  	}
+  	
+  	str = "OUTPUT:\n"+ str;
+  	
+  	Integer i = new Integer(strTok.nextToken());
+  	while (i.intValue() > 0)
+  	{
+//       System.out.println("Current iteration is " + i.intValue());
+  	   str = str + '\n';
+  	   while (!s.isEmpty())
+  	   {
+  	      q.enqueue(s.pop());
+  	      if(!s.isEmpty())  
+  	      {
+  	      	if (q.peekFront().equals(s.peekTop()))  // at least two in a row
+  	      	{
+	  	      	s.pop();
+	  	      	if (!s.isEmpty() && q.peekFront().equals(s.peekTop()))  // three in a row
+	  	      	{
+  	      		   s.pop();
+  	      		   str = str + "3" + (String)q.dequeue();
+	  	      	}
+	  	      	else  // exactly two in a row
+	  	      	{
+  	      		   str = str + "2" + (String)q.dequeue();
+
+	  	      	}
+  	      	}
+  	      	else  // no matches
+  	      	{
+  	      	   str = str + "1" + (String)q.dequeue();
+  	      	}
+  	      }
+  	      else  // stack isEmpty
+  	      {
+   		    str = str + "1" + (String)q.dequeue();
+  	      }
+  	   }
+//  re-seed the stack
+       while (str.length() > 0 && str.charAt(str.length()-1) != '\n')
+       {
+//          System.out.println("re-seeding with letter " + str.charAt(str.length()-1));
+       	  s.push("" + str.charAt(str.length()-1));
+       	  str = str.substring(0,str.length()-1);
+       	  q.enqueue("" + s.peekTop());
+       }
+       while (!s.isEmpty())
+       {
+       	  str = str + (String)s.pop();
+       }
+       while(!q.isEmpty())
+       {
+       	s.push(""+q.dequeue());
+       }
+	   i = new Integer(i.intValue()-1);
+  	}
+
+  	
+  	return str;//.substring(0,str.length()-1);
+  }
+  
+  public String mysteryF(String input)    // Fibonacci Sequence
+  {
+  	StringTokenizer strTok = new StringTokenizer(input);
+  	ArrayStack s = new ArrayStack();
+  	LinkedListQueue q = new LinkedListQueue();
+  	Integer i = new Integer(strTok.nextToken());
+  	
+  	q.enqueue(new Integer(1));
+  	q.enqueue(new Integer(1));
+  	s.push(new Integer(1));
+  	s.push(new Integer(1));
+  	
+  	while (i.intValue() > 2) 
+  	{
+  		s.push( new Integer(((Integer)q.dequeue()).intValue()
+  		         + ((Integer)s.peekTop()).intValue()));
+  		i = new Integer (i.intValue()-1);
+  		q.enqueue(s.peekTop());
+//  		System.out.println("enqueue'ing  " + s.peekTop());
+  	}
+  	
+  	String str = new String();
+
+  	while (!s.isEmpty())
+  	{
+  		str = (Integer)s.pop() + " " + str;
+  	}
+  	
+  	return str.substring(0,str.length()-1);
+  }
+
+}

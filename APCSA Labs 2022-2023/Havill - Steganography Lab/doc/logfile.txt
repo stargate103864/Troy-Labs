@@ -1,0 +1,40 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\BlueJ\jdk\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-Xdoclint:none
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+11
+-classpath
+C:\Program Files\BlueJ\lib\bluejcore.jar;C:\Program Files\BlueJ\lib\junit-4.11.jar;C:\Program Files\BlueJ\lib\hamcrest-core-1.3.jar;C:\Program Files\BlueJ\lib\lang-stride.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.base.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.controls.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.fxml.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.graphics.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.media.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.properties.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.swing.jar;C:\Program Files\BlueJ\lib\javafx\lib\javafx.web.jar;F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution
+-d
+F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\SteganographyHideImage.java
+<---- end of javadoc command ---->
+Loading source file F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\SteganographyHideImage.java...
+Constructing Javadoc information...
+Standard Doclet version 11.0.2
+Building tree for all the packages and classes...
+Generating F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc\SteganographyHideImage.html...
+F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\SteganographyHideImage.java:35: warning - @param argument "seecret" is not a parameter name.
+F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\SteganographyHideImage.java:63: warning - invalid usage of tag <
+F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\SteganographyHideImage.java:64: warning - invalid usage of tag <
+Generating F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc\package-summary.html...
+Generating F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc\allclasses.html...
+Generating F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc\allclasses.html...
+Generating F:\AP CS A\pixLab&Steg\newpixAndStagLab - Solution\doc\index.html...
+3 warnings

@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ClassStarterDay_2
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ClassStarterDay_1\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=head\ target\ val
+comment1.target=ListNode\ insertAfter(ListNode,\ java.lang.Object,\ java.lang.Object)
+comment1.text=\r\n<br>\ insert\ a\ new\ ListNode\ after\ the\ first\ ListNode\ with\ node.getvalue().equals(\ target)\r\n<br>\ The\ new\ node\ shall\ contain\ the\ parameter\ val\r\n<br>\ All\ other\ nodes\ are\ not\ changed\r\n<br>\ if\ no\ nodes\ contain\ target,\ the\ list\ is\ unchanged\r\n
+comment2.params=head\ target\ val
+comment2.target=ListNode\ insertBefore(ListNode,\ java.lang.Object,\ java.lang.Object)
+comment2.text=\r\n<br>\ insert\ a\ new\ ListNode\ before\ the\ first\ ListNode\ with\ node.getvalue().equals(\ target)\r\n<br>\ The\ new\ node\ shall\ contain\ the\ parameter\ val\r\n<br>\ All\ other\ nodes\ are\ not\ changed\r\n<br>\ if\ no\ nodes\ contain\ target,\ the\ list\ is\ unchanged\r\n
+comment3.params=head\ obj
+comment3.target=boolean\ contains(ListNode,\ java.lang.Object)
+numComments=4
